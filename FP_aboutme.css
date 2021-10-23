@@ -32,6 +32,11 @@ body::-webkit-scrollbar {
 
 header ul li {
     margin: 10px 10px;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    font: 'Roboto mono', monospace;
 }
 
 body {
