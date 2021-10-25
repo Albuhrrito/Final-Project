@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: rgba(18,18,18,255);
-    background-image: url("nameBackground.png");
+    background-image: url("nameBackground1.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
