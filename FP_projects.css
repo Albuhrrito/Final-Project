@@ -83,8 +83,8 @@ header a {
 }
 
 footer a {
-    background-color: rgba(48,30,20,255);
+    background-color: rgba(16,20,28,255);
     color: white;
     padding: 1em 1.5em;
     text-transform: uppercase;
-  }
+}

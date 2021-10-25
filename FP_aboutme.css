@@ -36,10 +36,15 @@ header ul li {
     text-align: center;
     color: white;
     font-size: larger;
-    font: 'Roboto mono', monospace;
+}
+
+header a {
+    color: white;
+    text-transform: uppercase;
 }
 
 body {
+    font: 'Roboto mono', monospace;
     margin-left: 250px;
     margin-right: 250px;
     padding-left: 100px;
@@ -56,10 +61,17 @@ body {
     background-size: cover;
 }
 
+footer a {
+    background-color: rgba(16,20,28,255);
+    color: white;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+}
+  
 footer {
+    color: white;
     text-align: center;
     font-size: 1.5em;
-    padding-bottom: 30px;
 }
 
 a {

@@ -129,7 +129,7 @@ image.center {
 }
 
 .container .card:hover .face.face1{
-    background: black;
+    background: rgb(50,50,90);
     transform: translateY(0);
 
 }
@@ -139,10 +139,12 @@ image.center {
     transition: 0.5s;
 }
 
-img {
-    position: relative;
-    text-align: center;
-}
+.content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 
 .container .card:hover .face.face1 .content{
     opacity: 1;
