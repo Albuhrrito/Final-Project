@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Ubuntu:wght@300&display=swap');
+
+/*
+Filename: FP_build.html
+Author: Albert Youssef
+Date: 10/16/2021
+*/
+
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header ul {
+    list-style-type: none;
+    text-align: center;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    
+}
+
+header ul li {
+    margin: 10px 10px;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    font-size: larger;
+}
+
+header a {
+    color: white;
+    text-transform: uppercase;
+}
+
+body {
+    font: 'Roboto mono', monospace;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    font-size: larger;
+    background-color: rgba(18,18,18,255);
+    color: white;
+    box-shadow:  0px 0px 50px black;
+    background-image: url("nameBackground.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer a {
+    background-color: rgba(16,20,28,255);
+    color: white;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+}
+  
+footer {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+a {
+    color: white;
+    text-transform: uppercase;
+}
