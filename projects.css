@@ -7,6 +7,21 @@ Author: Albert Youssef
 Date: 10/16/2021
 */
 
+@media only screen and (min-device-width : 300px) and (max-device-width : 850px) {
+    body {
+        background: green;
+        width: 100%;
+        font-family: 'Roboto Mono', monospace;
+        background-color: rgba(18,18,18,255);
+        background-image: url("nameBackground1.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+}
+
 body::-webkit-scrollbar {
     display: none;
 }

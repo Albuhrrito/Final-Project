@@ -7,6 +7,13 @@ Author: Albert Youssef
 Date: 10/16/2021
 */
 
+@media only screen and (min-device-width : 300px) and (max-device-width : 850px) {
+    body {
+      background: #999;
+      width: 100%;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +24,7 @@ header {
     width: 100%;
     background-position: center;
     background-size: cover;
+    white-space: nowrap;
 }
 
 body {
@@ -90,8 +98,8 @@ image.center {
 
 .centered {
     position: absolute;
-    top: 43%;
-    left: 51.41%;
+    margin-top: 22%;
+    margin-left: 51.41%;
     transform: translate(-50%, -50%);
     font-size: 9em;
     font-family: 'Ubuntu', sans-serif;

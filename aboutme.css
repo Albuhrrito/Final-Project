@@ -7,6 +7,13 @@ Author: Albert Youssef
 Date: 10/16/2021
 */
 
+@media only screen and (min-device-width : 300px) and (max-device-width : 850px) {
+    body {
+      background: #999;
+      width: 100%;
+    }
+}
+
 .container1 {
     position: relative;
     text-align: center;
