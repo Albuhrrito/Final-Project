@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Ubuntu:wght@300&display=swap');
 
 /*
-Filename: FP_build.html
+Filename: base.css
 Author: Albert Youssef
 Date: 10/16/2021
 */
@@ -25,6 +25,27 @@ header {
     background-position: center;
     background-size: cover;
     white-space: nowrap;
+}
+
+h6 {
+    text-align: center;
+    position: absolute;
+    margin-top: 920px;
+    margin-left: 49.3%;
+    color: rgba(255, 255, 255, 255);
+}
+
+#scroll1 {
+    position: absolute;
+    font-size: 59px;
+    margin-left: 47.2%;
+    margin-top: 880px;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0);
+}
+
+#social1 {
+    color: rgba(255, 255, 255, 0);
 }
 
 body {
@@ -71,7 +92,11 @@ body::-webkit-scrollbar {
   80% {opacity:0}
   100% {opacity:0}
 }
-  
+
+html {
+    scroll-behavior: smooth;
+}
+
 .arrows path.a1 {
     animation-delay:-1s;
     -webkit-animation-delay:-1s; /* Safari 和 Chrome */
@@ -113,7 +138,7 @@ image.center {
     width: 600px;
     position: relative;
     display: flex;
-    padding-top: 1000px;
+    padding-top: 1500px;
 }
 
 .container .card{
@@ -209,15 +234,24 @@ image.center {
     color: white;
 }
 
+footer a:hover {
+    background-color: rgb(26,30,48);
+}
+
 footer a {
-  background-color: rgba(16,20,28,255);
+  background-color: rgb(16,20,28);
   color: white;
-  padding: 1em 1.5em;
+  padding: 1em 4em;
+  padding-top: 2.4em;
+  margin-left: 65px;
+  margin-right: 65px;
   text-transform: uppercase;
+  
 }
 
 footer {
     color: white;
     text-align: center;
     font-size: 1.5em;
+    padding-bottom: 350px;
 }

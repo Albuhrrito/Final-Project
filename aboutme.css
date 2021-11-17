@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Ubuntu:wght@300&display=swap');
 
 /*
-Filename: FP_build.html
+Filename: aboutme.css
 Author: Albert Youssef
 Date: 10/16/2021
 */
@@ -12,6 +12,29 @@ Date: 10/16/2021
       background: #999;
       width: 100%;
     }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#resume {
+    color: white;
+}
+
+/* Style buttons */
+.btn {
+    background-color: rgb(51, 69, 87);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+  
+  /* Darker background on mouse-over */
+.btn:hover {
+    background-color: rgb(66, 129, 103);
 }
 
 .container1 {
@@ -69,6 +92,10 @@ body {
     background-size: cover;
 }
 
+footer a:hover {
+    background-color: rgb(26,30,48);
+}
+
 footer a {
     background-color: rgba(16,20,28,255);
     color: white;
@@ -80,6 +107,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 1.5em;
+    padding-bottom: 35px;
 }
 
 a {

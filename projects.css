@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Ubuntu:wght@300&display=swap');
 
 /*
-Filename: FP_build.html
+Filename: projects.css
 Author: Albert Youssef
 Date: 10/16/2021
 */
@@ -79,11 +79,20 @@ header ul li {
     box-shadow:  0px 0px 50px black;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#reversah {
+    color: white;
+}
+
 footer {
     padding-top: 40px;
     color: white;
     text-align: center;
     font-size: 1.5em;
+    padding-bottom: 35px;
 }
 
 h2 {
@@ -97,9 +106,14 @@ header a {
     text-transform: uppercase;
 }
 
+footer a:hover {
+    background-color: rgb(26,30,48);
+}
+
 footer a {
     background-color: rgba(16,20,28,255);
     color: white;
     padding: 1em 1.5em;
     text-transform: uppercase;
+    
 }
