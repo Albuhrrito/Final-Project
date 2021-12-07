@@ -129,16 +129,18 @@ image.center {
     font-size: 9em;
     font-family: 'Ubuntu', sans-serif;
     color: white;
+    overflow: hidden;
+    white-space: nowrap;
     
 }
   
 
 .container{
     margin: auto;
-    width: 600px;
+    width: 900px;
     position: relative;
     display: flex;
-    padding-top: 1500px;
+    padding-top: 1400px;
 }
 
 .container .card{
@@ -241,10 +243,10 @@ footer a:hover {
 footer a {
   background-color: rgb(16,20,28);
   color: white;
-  padding: 1em 4em;
-  padding-top: 2.4em;
-  margin-left: 65px;
-  margin-right: 65px;
+  padding: 1em 1.5em;
+  padding-top: 1em;
+  margin-left: 5px;
+  margin-right: 5px;
   text-transform: uppercase;
   
 }
@@ -253,5 +255,5 @@ footer {
     color: white;
     text-align: center;
     font-size: 1.5em;
-    padding-bottom: 350px;
+    padding-bottom: 300px;
 }

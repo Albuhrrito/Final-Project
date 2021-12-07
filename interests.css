@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/*
+Author: Albert Youssef
+Date: 10/16/2021
+*/
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgba(18,18,18,255);
+    background-image: url("backgroundIMAGE.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: rgba(30,40,48,255);
+}
+  
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+#navbar a.active {
+    background-color: #31755c;
+    color: white;
+}
+  
+.content {
+    padding: 16px;
+}
+  
+.sticky {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 97%;
+}
+  
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.header {
+    background-color: rgba(30,40,48,255);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 130px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+    Filename: index.html
+    Author: Albert Youssef
+    Date: 10/16/2021
+   -->
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Albert Youssef</title>
+   <link rel="stylesheet" href="interests.css" />
+   <!--
+   <link rel="stylesheet" media="only screen and (max-width: 800px)" href="mobileBase.css" async>
+   <link rel="stylesheet" media="only screen and (min-width: 801px)" href="base.css" async>
+   -->
+</head>
+<header>
+    <div class="header">
+        <div id="navbar">
+          <a href="index.html">Home</a>
+          <a href="aboutme.html">About Me</a>
+          <a class="active" href="projects.html">Projects</a>
+          <a href="interests.html">Interests</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <script>
+          window.onscroll = function() {myFunction()};
+          
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+      </script>
+</header>
+<h2>My Interests</h2>
+
+<body>
+    
+</body>
