@@ -99,17 +99,17 @@ html {
 
 .arrows path.a1 {
     animation-delay:-1s;
-    -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+    -webkit-animation-delay:-1s; /* Safari / Chrome */
 }
   
 .arrows path.a2 {
     animation-delay:-0.5s;
-    -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+    -webkit-animation-delay:-0.5s; /* Safari / Chrome */
 }
   
 .arrows path.a3 { 
     animation-delay:0s;
-    -webkit-animation-delay:0s; /* Safari 和 Chrome */
+    -webkit-animation-delay:0s; /* Safari / Chrome */
 }
 
 ul {
@@ -131,13 +131,12 @@ image.center {
     color: white;
     overflow: hidden;
     white-space: nowrap;
-    
 }
   
 
 .container{
     margin: auto;
-    width: 900px;
+    width: 1550px;
     position: relative;
     display: flex;
     padding-top: 1400px;
@@ -146,12 +145,15 @@ image.center {
 .container .card{
     position: relative;
     cursor: pointer;
+
 }
 
 .container .card .face{
-    width: 300px;
+    margin-left: 50px;
+    width: 450px;
     height: 200px;
     transition: 0.5s;
+    
 }
 
 .container .card .face.face1{
@@ -162,12 +164,13 @@ image.center {
     align-items: center;
     z-index: 1;
     transform: translateY(100px);
+    border-radius: 17%;
 }
 
 .container .card:hover .face.face1{
     background: rgb(50,50,90);
     transform: translateY(0);
-
+    border-radius: 0%;
 }
 
 .container .card .face.face1 .content{
@@ -210,15 +213,18 @@ image.center {
     box-sizing: border-box;
     box-shadow:  0px 0px 50px black;
     transform: translateY(-100px);
+    border-radius: 20%;
 }
 
 .container .card:hover .face.face2{
     transform: translateY(0);
+    border-radius: 0%;
 }
 
 .container .card .face.face2 .content p{
     margin: 0;
     padding: 0;
+    
 }
 
 .container .card .face.face2 .content a{
@@ -248,7 +254,7 @@ footer a {
   margin-left: 5px;
   margin-right: 5px;
   text-transform: uppercase;
-  
+  border-radius: 30%;
 }
 
 footer {
