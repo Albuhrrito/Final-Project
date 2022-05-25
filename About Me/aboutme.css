@@ -131,11 +131,8 @@ header a {
 }
 
 body {
-    margin-left: 250px;
-    margin-right: 250px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 30px;
+    top: 10%;
+    left: 10%;
     font-size: larger;
     background-color: rgba(18,18,18,255);
     color: white;
