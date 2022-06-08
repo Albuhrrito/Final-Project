@@ -25,8 +25,44 @@
     <path class="a3" d="M0 40 L30 72 L60 40"></path>
 </svg>
 <body>
+    <a href="https://github.com/Albuhrrito"><i class="fa fa-github" style="font-size:24px;color: white;position: absolute;left: 98%;top: 2%;"></i></a>
+    <a href="https://twitter.com/koitsuVAL"><i class="fa fa-twitter" style="font-size:24px;color: white;position: absolute;left: 98%;top: 6%;"></i></a> 
+    <div id="navbar" class="container2" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a class="active" href="/index.html">Home</a>
+        <a href="/About Me/aboutme.html">About Me</a>
+        <!--<a href="/Projects/projects.html">Projects</a>
+        <a href="/Interests/interests.html">Interests</a>-->
+        <a href="/Contact/contact.html">Contact</a>
+      </div>
+      <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onscroll = function() {myFunction1()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction1() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
     <a href="#social1" id="scroll1"></a>
-    
+    <a href="/index.html">
+        <svg class="mylogo" width="70" height="60" viewBox="0 0 266 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 155L90 9L163.5 129L176 103L122.5 9H150L192 77L234.5 9H258L176 155H150L90 58L51.5 129H105L115.5 155H8Z" fill="white" stroke="white" stroke-width="9"/>
+        </svg> 
+    </a>       
     <svg id="logo" width="1013" height="115" viewBox="0 0 1013 115" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M67.416 89.68H23.64L15.576 112H1.75195L38.04 12.208H53.16L89.304 112H75.48L67.416 89.68ZM63.672 79.024L45.528 28.336L27.384 79.024H63.672Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1_2_6)"/>
         <path d="M118.223 5.44001V112H105.119V5.44001H118.223Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1_2_6)"/>
@@ -49,55 +85,37 @@
             console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
         }
     </script>
-        
-        
-        
     
-    <!--<div class="container1">
-        <div class="centered"><strong><p class="line-1 anim-typewriter">Albert Youssef</p></strong></div>
-    </div>-->
     <div class="container">
         <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
-                    <h3>About Me</h3>
+            <a class="carda" href="/About Me/aboutme.html">
+                <div class="face face1">
+                    <div class="content">
+                            <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                            <h3>About Me</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Learn more about me!</p>
-                        <a href="/About Me/aboutme.html">Click Here</a>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
-                    <h3>Projects</h3>
+            <a class="carda" href="/Projects/projects.html">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
+                        <h3>Projects</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>See my other work!</p>
-                        <a href="/Projects/projects.html">Click Here</a>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <img src="interestPic.png">
-                    <h3>Interests</h3>
+            <a class="carda" href="index.html">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="interestPic.png">
+                        <h3>WIP</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Check out my hobbies!</p>
-                        <a href="/Interests/interests.html">Click Here</a>
-                </div>
-            </div>
+            </a>
         </div>
     </div>
     <footer>

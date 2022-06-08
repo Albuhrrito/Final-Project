@@ -16,116 +16,81 @@
 </head>
 <header>
     <div class="header">
-      <div id="navbar">
-        <a href="/index.html">Home</a>
-        <a class="active" href="#resume">About Me</a>
-        <a href="/Projects/projects.html">Projects</a>
-        <a href="/Interests/interests.html">Interests</a>
+        <div id="navbar">
+          
+        </div>
+        <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+          
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+        </script>
+</header>
+<body>
+  <a href="https://github.com/Albuhrrito"><i class="fa fa-github" style="font-size:24px;color: white;position: absolute;left: 98%;top: 2%;"></i></a>
+    <a href="https://twitter.com/koitsuVAL"><i class="fa fa-twitter" style="font-size:24px;color: white;position: absolute;left: 98%;top: 6%;"></i></a> 
+    <div id="navbar" class="container2" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a class="active" href="/index.html">Home</a>
+        <a href="#">About Me</a>
+        <!--<a href="/Projects/projects.html">Projects</a>
+        <a href="/Interests/interests.html">Interests</a>-->
         <a href="/Contact/contact.html">Contact</a>
-    </div>
+      </div>
+      
       <script>
-        window.onscroll = function() {myFunction()};
+        function myFunction(x) {
+          x.classList.toggle("change");
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onscroll = function() {myFunction1()};
         
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
         
-        function myFunction() {
+        function myFunction1() {
           if (window.pageYOffset >= sticky) {
             navbar.classList.add("sticky")
           } else {
             navbar.classList.remove("sticky");
           }
         }
-    </script>
-</header>
-<body>
-    <div class="container1">
-        <img id="pogob" src="pfp.png" alt="pfp" class="center"/>
-    <div class="centered"><h1>About Albert Youssef</h1></div>
-    </div>
-    <h2 id="resume">My Resume</h2>
-    <a href="Albert-Youssef-Resume.pdf" download>
-        <button class="btn"><i class="fa fa-download"></i> Download</button>
+        </script>
+    <a href="#social1" id="scroll1"></a>
+    <a href="/index.html">
+        <svg class="mylogo" width="70" height="60" viewBox="0 0 266 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 155L90 9L163.5 129L176 103L122.5 9H150L192 77L234.5 9H258L176 155H150L90 58L51.5 129H105L115.5 155H8Z" fill="white" stroke="white" stroke-width="9"/>
+        </svg> 
     </a>
-    <h2>Career Goal</h2>
-    <p>
-        Current college student actively working towards self-improvement. Enthusiastic about coding and
-        100% inclined towards learning something new.
-    </p>
-
-    <h2>Work Experience</h2>
-    <p>
-        <h3>Coding Instructor at Code Ninjas</h3>
-            <ul>
-                <li>Lead classes of "Ninjas" or students in learning basic game development and JavaScript</li>
-                <li>Created tasks and tested the students knowledge through challenges I created specifically for their
-                    improvement</li>
-                <li>Developed and restructured games acting as examples for students to recreate.</li>
-            </ul>
-        
-        <h3>Reversah Website Developer</h3>
-            <ul>
-                <li>Designed and developed a user-friendly website, including optimized shopping cart and gallery page
-                    to increase total customer purchases by 27%</li>
-                <li> Integrated MailChimp systems and designed an accessible customer support page to track customer
-                    satisfaction and statistics on products purchased.</li>
-                <li>Light experience with Liquid and Node.js</li>
-            </ul>
-        <h3>Game Developer Intern</h3>
-            <ul>
-                <li>Studied under CEO Leonard Tatum and a team of developers.</li>
-                <li>Remotely assisted in the development of the team project Mikros SDK and created the html framework
-                    for the program's website.</li>
-                <li>Assisted in the development and maintenance of Mikros SDK and API</li>
-                <li>Debugged and filled out intern tickets by testing functions, working with Alpha stage applications, and
-                    problem solving.</li>
-            </ul>
-    </p>
-
-    <h2>Education</h2>
-    <p> 
-        <strong> Arcadia High School, Arcadia, CA — (August 2016 - June 2020)</strong>
-        <br />
-        <strong>Pasadena City College, Pasadena, CA — Computer Science (August 2020 - June 2022)</strong>
-        <ul>
-            <li>Cumulative GPA of 3.6</li>
-            <li>Relevant Coursework:</li>
-                <ul id="private_ul">
-                    <li>Intro to programming in C++</li>
-                    <li>Intro to programming in Python</li>
-                    <li>Object Oriented Programming in C++</li>
-                    <li>Object Oriented Programming in Java</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Single & Multivariable Calculus</li>
-                    <li>Linear Algebra</li>
-                    <li>Discrete Math</li>
-                </ul>
-        </ul>
-    </p>
-
-    <h2>Skills</h2>
-    <p>
-        <strong>Programming Languages: </strong>
-        <ul id="private_ul">
-            <li>C++</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </p>
-
-    <h2>Additional Information</h2>
-    <p>
-        <ul>
-            <li>Favorite Games: Valorant, League of Legends, Apex Legends, Overwatch, Rainbow 6 Siege,
-                Hearthstone, Minecraft, Terraria, Rocket League and BTD6.</li>
-            <li> 6 years of experience with building, repairing and selling old laptops and PC desktops</li>
-        </ul>
-    </p>
-
-    <footer>
+    <div class="contain">
+        <h1 id="title">Albert Youssef</h1>
+        <h2 id="smalltitle">&lt; Developer &gt;</h2>
+        <p id="description"> 
+          Current college student actively working towards self-improvement. Enthusiastic about coding and 100% inclined towards learning something new.
+        </p>
+        <p>Questions?</p>
+        <a id="contactbut" href="/Contact/contact.html"><strong>Contact me</strong></a>
+        <br>
+        <a id="resumebut" target="_blank" href="Albert-Youssef-Resume.pdf"><strong>Resume</strong></a>
+        <br>
+        <a id="devbut" href="https://dev.to/albuhrrito"><strong>Dev.to</strong></a>
+    </div>
+    <img class="picture" src="maskedface.png" alt="">
+  <footer>
         <strong>SOCIALS</strong>
         <div class="social">
             <a href="https://www.linkedin.com/in/albert-youssef-5420341ba" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
@@ -135,5 +100,4 @@
         </div>
     </footer>
 </body>
-
 </html>

@@ -17,11 +17,7 @@
 <header>
     <div class="header">
         <div id="navbar">
-          <a href="/index.html">Home</a>
-          <a href="/About Me/aboutme.html">About Me</a>
-          <a class="active" href="#reversah">Projects</a>
-          <a href="/Interests/interests.html">Interests</a>
-          <a href="/Contact/contact.html">Contact</a>
+          
         </div>
         <script>
         window.onscroll = function() {
@@ -41,53 +37,49 @@
         </script>
 </header>
 <body>
-    <div class="container">
-        <form action="action_page.php">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
+  <a href="https://github.com/Albuhrrito"><i class="fa fa-github" style="font-size:24px;color: white;position: absolute;left: 98%;top: 2%;"></i></a>
+    <a href="https://twitter.com/koitsuVAL"><i class="fa fa-twitter" style="font-size:24px;color: white;position: absolute;left: 98%;top: 6%;"></i></a> 
+    <div id="navbar" class="container2" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-      <div class="container">
-        <form action="action_page.php">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
+      <div id="myDropdown" class="dropdown-content">
+        <a class="active" href="/index.html">Home</a>
+        <a href="/About Me/aboutme.html">About Me</a>
+        <!--<a href="/Projects/projects.html">Projects</a>
+        <a href="/Interests/interests.html">Interests</a>-->
+        <a href="#frame">Contact</a>
       </div>
-    <footer>
+      <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onscroll = function() {myFunction1()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction1() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+    <a href="#social1" id="scroll1"></a>
+    <a href="/index.html">
+        <svg class="mylogo" width="70" height="60" viewBox="0 0 266 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 155L90 9L163.5 129L176 103L122.5 9H150L192 77L234.5 9H258L176 155H150L90 58L51.5 129H105L115.5 155H8Z" fill="white" stroke="white" stroke-width="9"/>
+        </svg> 
+    </a>
+    <h1 id="title">Any Questions? Let me know below.</h1>
+<div class="container3">
+  <iframe id="frame" src="https://docs.google.com/forms/d/e/1FAIpQLScbboFhxVBp5l-lefIPo8pSX44VNdf14DvRbgRtEKTslIUgCg/viewform?embedded=true" width="640" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>  
+  <footer>
         <strong>SOCIALS</strong>
         <div class="social">
             <a href="https://www.linkedin.com/in/albert-youssef-5420341ba" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
