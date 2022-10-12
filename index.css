@@ -28,10 +28,10 @@ header {
 }
 
 .mylogo {
-    width: 60px;
+    width: 36px;
     float: right;
     margin-right: 2.6%;
-    margin-top: 0.1%;
+    margin-top: 0.05%;
 }
 
 .mylogo:hover {
@@ -174,8 +174,7 @@ h6 {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #242730;
-    
+    background-image: linear-gradient(#242730, rgb(61, 62, 67));
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

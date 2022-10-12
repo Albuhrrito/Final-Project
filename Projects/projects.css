@@ -9,24 +9,16 @@ Date: 10/16/2021
 
 @media only screen and (min-device-width : 300px) and (max-device-width : 850px) {
     body {
-        background: green;
+        background-color: green;
         width: 100%;
         font-family: 'Roboto Mono', monospace;
-        background-color: rgba(18,18,18,255);
-        background-image: url("nameBackground1.png");
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
     }
 }
   
   .header {
     background-color: rgb(30,40,48,);
     padding: 10px;
-    text-align: center;
-    margin-bottom: 130px;
+    margin-bottom: 35px;
   }
   
   @keyframes rollDown {
@@ -60,7 +52,7 @@ body::-webkit-scrollbar {
 
 body {
     font-family: Poppins;
-    background-color: rgba(18,18,18,255);
+    background-image: linear-gradient(#0b0f28, rgb(37, 26, 11));
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,21 +156,48 @@ a {
   color: none;
 }
 
-h1 {
+#first {
+  font-size: 2rem;
+  padding-left: 25%;
+  text-shadow: 4px 4px black;
+}
 
+#second {
+  font-size: 2rem;
+  padding-left: 17%;
+  padding-top: 7%;
+  text-shadow: 4px 4px black;
+}
 
-
+.container {
+  display: grid;
 }
 
 h2 {
+    color: rgb(169, 93, 93);
     font-size: 50px;
     text-align: center;
-    padding-left: 50px;
+    text-shadow: 2px 2px rgb(176, 157, 157);
+}
+
+.mylogo {
+  width: 36px;
+  float: right;
+  margin-right: 2.6%;
+}
+
+.mylogo:hover {
+  transform: scale(1.1);
+  transition: .2s;
 }
 
 header a {
     color: white;
     text-transform: uppercase;
+}
+
+footer {
+  padding-top: 100px;
 }
 
 footer a:hover {
@@ -190,11 +209,12 @@ footer a {
     color: white;
     padding: 1em 1.5em;
     text-transform: uppercase;
-    
+    border-radius: 1rem;
 }
 
-.showcase {
-  position: relative;
+.containerGrid {
+  position: rel;
+  display: grid;
 }
 
   /* The container <div> - needed to position the dropdown content */
