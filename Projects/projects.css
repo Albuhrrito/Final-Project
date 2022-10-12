@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Ubuntu:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 /*
 Filename: projects.css
 Author: Albert Youssef
@@ -38,67 +38,6 @@ Date: 10/16/2021
     }
 }
 
-.container2.change {
-    animation: rollDown 0.5s;
-}
-
-.container2 {
-    margin-top: 1%;
-    margin-left: 1%;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .dropbtn {
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .bar2 {
-    width: 25px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.3s;
-    border-radius: 4rem;
-  }
-  
-  .bar3 {
-    width: 45px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.3s;
-    border-radius: 4rem;
-  }
-  
-  .bar1 {
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.3s;
-    border-radius: 4rem;
-  }
-  
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-    border-radius: 100%;
-  }
-  
-  .change .bar2 {
-      opacity: 0;
-      width: 1%;
-  }
-  
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-    border-radius: 100%;
-    width: 35px;
-  }
-  
   .content {
     padding: 16px;
   }
@@ -120,9 +59,8 @@ body::-webkit-scrollbar {
 }
 
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: Poppins;
     background-color: rgba(18,18,18,255);
-    background-image: url("nameBackground1.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -143,17 +81,31 @@ header ul li {
 }
   
 .grid-container {
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(50%, 10%);
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #2196F3;
+  background-color: #2d3436;
   padding: 10px;
 }
+
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
+  text-decoration:none;
+  background-color: #2d3436;
+  border: 1px solid #b2bec3;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.3rem;
   text-align: center;
+}
+
+.grid-item:hover {
+  background-color: #b2bec3;
+  color: #1c2833;
 }
 
   /* Create two equal columns that floats next to each other 
@@ -206,6 +158,11 @@ footer {
     padding-bottom: 35px;
 }
 
+a {
+  text-decoration:none;
+  color: none;
+}
+
 h1 {
 
 
@@ -237,4 +194,110 @@ footer a {
 
 .showcase {
   position: relative;
+}
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+
+    position: absolute;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    margin-left: 10px;
+    box-shadow: 5px 5px 10px 0px black;
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+img {
+    width: 100%;
+    filter: contrast(0);
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 1rem;
+  color: #242730;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: inline;
+}
+
+.container2.change {
+  animation: rollDown 0.5s;
+}
+
+.container2 {
+  margin-top: 1%;
+  margin-left: 1%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropbtn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar2 {
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.3s;
+  border-radius: 4rem;
+}
+
+.bar3 {
+  width: 45px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.3s;
+  border-radius: 4rem;
+}
+
+.bar1 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.3s;
+  border-radius: 4rem;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  border-radius: 100%;
+}
+
+.change .bar2 {
+    opacity: 0;
+    width: 1%;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  border-radius: 100%;
+  width: 35px;
 }

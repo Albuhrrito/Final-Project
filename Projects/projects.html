@@ -16,26 +16,36 @@
 </head>
 <header>
     <div class="header">
-        <div id="navbar">
-          <a href="/index.html">Home</a>
-          <a href="/About Me/aboutme.html">About Me</a>
-          <a class="active" href="#reversah">Projects</a>
-          <a href="/Contact/contact.html">Contact</a>
-        </div>
+        <div id="navbar" class="container2" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div id="myDropdown" class="dropdown-content">
+            <a class="active" href="/index.html">Home</a>
+            <a href="/About Me/aboutme.html">About Me</a>
+            <!--<a href="/Projects/projects.html">Projects</a>
+            <a href="/Interests/interests.html">Interests</a>-->
+            <a href="/Contact/contact.html">Contact</a>
+          </div>
         <script>
-          window.onscroll = function() {myFunction()};
-          
-          var navbar = document.getElementById("navbar");
-          var sticky = navbar.offsetTop;
-          
-          function myFunction() {
-            if (window.pageYOffset >= sticky) {
-              navbar.classList.add("sticky")
-            } else {
-              navbar.classList.remove("sticky");
+            function myFunction(x) {
+                x.classList.toggle("change");
+                document.getElementById("myDropdown").classList.toggle("show");
             }
-          }
-      </script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+                } else {
+                navbar.classList.remove("sticky");
+                }
+            }
+        </script>
 </header>
 <h2>My Projects</h2>
 <body>
@@ -43,29 +53,13 @@
         
     </div>
     <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>  
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>  
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>  
+        <a href="https://github.com/tyjcushing/Reversah" target="_blank"><div class="grid-item">Reversah Website</div></a>
+        <div class="grid-item">SYNRG Media</div>
+        <div class="grid-item">OfficialBlvrd</div>  
+        <div class="grid-item">NFT React App</div>
+        <div class="grid-item">This Website!</div>
+        <div class="grid-item">Pogbot(NSFW)</div> 
     </div>
-    <section class="showcase">
-        <div class="container grid">
-            <div class="showcase-text">
-                <h1 id="reversah">Reversah Website</h1>
-                <p>
-                    Fully Developed website using HTML, CSS, JS, and Shopify Liquid. Reversah Banners sells Valorant Banners designed off in-game Valorant playable agents. Click the image to check the Github repo out!
-                </p>
-            </div>
-            <div class="container1">
-                <a href="https://github.com/tyjcushing/Reversah" target="_blank"><img id="reversah" src="reversah.png" alt="reversah" class="center"></a>
-            </div>
-        </div>
-    </section>
     <section class="showcase">
         <div class="container grid">
             <div class="showcase-text">
