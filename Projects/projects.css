@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
 
 body {
     font-family: Poppins;
-    background-image: linear-gradient(#0b0f28, rgb(37, 26, 11));
+    background-image: linear-gradient(#121527, black);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,15 +79,17 @@ header ul li {
   transform: translate(50%, 10%);
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #2d3436;
+  background-color: rgb(42, 43, 72);
   padding: 10px;
+  border-radius: 1rem;
 }
 
 .grid-item {
   text-decoration:none;
   color: #b2bec3;
-  background-color: #2d3436;
+  background-color: rgb(54, 54, 70);
   border: 1px solid #b2bec3;
+  border-radius: 1rem;
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 20px;
@@ -174,10 +176,10 @@ a {
 }
 
 h2 {
-    color: rgb(169, 93, 93);
+    color: rgb(255, 255, 255);
     font-size: 50px;
     text-align: center;
-    text-shadow: 2px 2px rgb(176, 157, 157);
+    text-shadow: 2px 2px rgb(139, 139, 139);
 }
 
 .mylogo {
