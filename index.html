@@ -12,12 +12,26 @@
    <body>
       <div data-collapse="none" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
          <a href="/" aria-current="page" class="brand w-nav-brand w--current"><img src="https://assets.website-files.com/5b2a8936920a797db4639905/5b2a8936920a798c07639957_logo.png" width="188" alt=""/></a>
-         <nav id="top" role="navigation" class="nav-menu w-nav-menu"><a href="/" aria-current="page" class="link-nav w-nav-link w--current">Home</a><a href="#scroll" class="link-nav w-nav-link">About</a><a href="../Contact/contact.html" class="link-nav w-nav-link">Contact</a></nav>
+         <nav id="top" role="navigation" class="nav-menu w-nav-menu"><a href="/" aria-current="page" class="link-nav w-nav-link w--current">Home</a><a href="#scroll" class="link-nav w-nav-link">About</a>
+            <a href="../Contact/contact.html" class="link-nav w-nav-link">Contact</a>
+            <div class="dropdown">
+               <button class="dropbtn">Contact1</button>
+               <div class="dropdown-content">
+                 <a href="#">Link 1</a>
+                 <a href="#">Link 2</a>
+                 <a href="#">Link 3</a>
+               </div>
+             </div>
          <div class="w-nav-button">
             <div class="w-icon-nav-menu"></div>
          </div>
       </div>
       <script>
+         let y = document.getElementById("dropdown");
+         function dropdownContent(x) {
+
+         }
+
          let x = document.getElementById("brainpic");
          function onclick(x) {
 
@@ -89,7 +103,7 @@
             </div>
          </div>
          <div role="listitem" class="wrapper w-dyn-item">
-            <div style="background-image:url(&quot;../TeahouseBackground.png&quot;)" class="column background-image">
+            <div style="background-image:url(&quot;../TeahouseBackground.jpg&quot;)" class="column background-image">
                <div class="column _100vh">
                   <div class="project-info">
                      <div class="number">
@@ -106,8 +120,8 @@
          <div id="scroll" class="div-block-27">
             <div class="div-block-26">
                <a href="#top"><img src="https://assets.website-files.com/5b2a8936920a797db4639905/5b2a8936920a798c07639957_logo.png" width="147" alt="" class="logo-footer"/> </a>
-               <div class="wrapper-list-links"><a target="_blank" href="https://github.com/Albuhrrito" class="footer-links">Github</a><a target="_blank" href="https://www.instagram.com/albruh.u/" class="footer-links">Instagram</a><a target="_blank" href="https://twitter.com/albruh_u" class="footer-links">Twitter</a><a target="_blank" href="https://www.linkedin.com/in/albert-youssef-5420341ba/" class="footer-links">Linkedin</a></div>
-               <br class="small-p">"Knowledge can never replace friendship. </br> If that were the case, I'd prefer to be an idiot." <strong> &nbsp;&nbsp;&nbsp;&nbsp;Patrick Star 🙏 </strong></p>
+               <div class="wrapper-list-links"><a target="_blank" href="https://github.com/Albuhrrito" class="footer-links">Github</a><a target="_blank" href="https://www.instagram.com/albruh.u/" class="footer-links">Instagram</a><a target="_blank" href="https://twitter.com/albruh_u" class="footer-links">Twitter</a><a target="_blank" href="https://www.linkedin.com/in/albert-youssef-5420341ba/" class="footer-links">Linkedin</a><a target="_blank" href="https://albuhrrito.github.io/photobertWebsite/" class="footer-links">Photography</a></div>
+               <br class="small-p">"Knowledge can never replace friendship. <br> If that were the case, I'd prefer to be an idiot." <strong> &nbsp;&nbsp;&nbsp;&nbsp;Patrick Star 🙏 </strong></p>
             </div>
          </div>
       </div>
